@@ -1,0 +1,95 @@
+/*
+CSS Normalize and Reset
+*/
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    Matt's CSS Normalize 
+    https://mattbrictson.com/blog/css-normalize-and-reset
+  */
+  h1, h2, h3, h4, h5 {
+    font-size: inherit;
+    font-weight: inherit;
+  } 
+  ol[role="list"], ul[role="list"] {
+    list-style: none;
+    padding-inline: 0;
+  }
+  
+  /*
+    MDN's form normalize and reset
+  */
+  
+  input{
+    font-family: inherit;
+    font-size: 100%;
+  }
+  
+  input,
+  button {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+  }
+ 
+/*
+End of CSS Normalize and Reset
+*/
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    padding: 20px;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.trends {
+    grid-area: trends;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "sidebar header header"
+    "sidebar projects announcements"
+    "sidebar projects trends";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+
+}
