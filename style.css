@@ -156,7 +156,7 @@ body {
 
 
 
-.profile-sum .profile-picture {
+.profile-sum .profile-picture, .trend img {
   border-radius: 50%;
   height: 50px;
 }
@@ -197,7 +197,7 @@ input {
   font-weight: 600;
 }
 
-.header-bottom {
+.header-bottom, .trend {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -273,7 +273,7 @@ button:hover {
   font-weight: 600;
 }
 
-.announcements .title {
+.announcements .title, .trends .title {
   font-size: 1.6rem;
   font-weight: 600;
   padding-bottom: 24px;
@@ -300,5 +300,26 @@ button:hover {
 
 .announcement p {
   padding-bottom: 24px;
+}
+
+.trend {
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.trend-block {
+  border-radius: 10px;
+  background-color: #fff;
+  margin-right: 24px;
+  padding: 24px;
+}
+
+.trending p:nth-child(2) {
+  color: #85898e;
+  font-style: italic;
+}
+
+.trend {
+  margin-bottom: 20px;
 }
 
