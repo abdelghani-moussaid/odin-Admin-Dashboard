@@ -62,9 +62,9 @@ ul {
 End of CSS Normalize and Reset
 */
 
-/* System Fonts with system-ui */
+/* Google font Roboto */
 body {
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Roboto", system-ui, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .header {
@@ -327,4 +327,16 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.projects p, .announcements p {
+  color: #85898e;
+}
+
+.projects p {
+  font-size: 1.1rem;
+}
+
+.ann-list, .trend-block {
+  box-shadow: 2px 5px #e1e0e0ef;
 }
