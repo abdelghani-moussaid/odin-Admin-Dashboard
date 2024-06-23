@@ -323,3 +323,8 @@ button:hover {
   margin-bottom: 20px;
 }
 
+.project-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
