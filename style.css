@@ -54,10 +54,18 @@ CSS Normalize and Reset
     margin: 0; 
     box-sizing: border-box;
   }
+  ul {
+    padding: 0;
+  }
  
 /*
 End of CSS Normalize and Reset
 */
+
+/* System Fonts with system-ui */
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 
 .header {
     grid-area: header;
@@ -65,10 +73,10 @@ End of CSS Normalize and Reset
 
 .sidebar {
     grid-area: sidebar;
-}
-
-.content {
-    padding: 20px;
+    padding: 12px;
+    background-color: #0284c7;
+    color: #f0f9ff;
+    font-weight: 600;
 }
 
 .projects {
@@ -89,7 +97,49 @@ End of CSS Normalize and Reset
     "sidebar header header"
     "sidebar projects announcements"
     "sidebar projects trends";
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 300px 4fr 1fr;
     grid-template-rows: 1fr 3fr 3fr;
 
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+}
+
+.sidebar-navigation, .sidebar-controls {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: repeat(3, 50px);
+  grid-auto-rows: 50px;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 6px;
+}
+
+.sidebar-header {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-auto-rows: 50px;
+  align-items: center;
+  gap: 6px;
+}
+
+.sidebar img {
+  filter: invert(87%) sepia(3%) saturate(1856%) hue-rotate(192deg) brightness(110%) contrast(104%);
+}
+
+.sidebar h1 {
+  font-size: 1.8rem;
+}
+
+.sidebar p {
+  font-size: 1.3rem;
+}
+
+.sidebar img:first-child {
+  width: 3000px;
+  height: auto;
 }
