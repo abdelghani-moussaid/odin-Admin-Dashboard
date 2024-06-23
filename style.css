@@ -98,7 +98,7 @@ body {
     "sidebar projects announcements"
     "sidebar projects trends";
     grid-template-columns: 300px 4fr 1fr;
-    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-rows: 1fr 4fr;
 
 }
 
@@ -139,7 +139,83 @@ body {
   font-size: 1.3rem;
 }
 
-.sidebar img:first-child {
-  width: 3000px;
-  height: auto;
+.header .icon {
+  height: 30px;
+  width: auto;
+}
+
+
+
+.profile-sum .profile-picture {
+  border-radius: 50%;
+  height: 50px;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 70px 100px;
+  margin: 0 48px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+.profile-sum, .search {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.search {
+  width: 100%;                    /* here */
+    min-width: 30rem;               /* here */
+    max-width: 50rem;               /* here */
+}
+input {
+  background-color: #e5e7eb;
+  border: #e5e7eb;
+  border-radius: 30px;
+  width: 80%;  
+  height: 40px;
+  padding: 10px;
+  font-size: 1.4rem;
+}
+.header p {
+  font-weight: 600;
+}
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-bottom .profile-picture {
+  border-radius: 50%;
+  height: 80px;
+}
+.header-bottom .greetings {
+  font-size: 1.5rem;
+}
+
+button {
+  background-color: #0284c7; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+button:hover {
+  background-color: #075985;
 }
